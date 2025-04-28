@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワード保護されたウェブサイト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="mainHeading">ウェブサイトにアクセスするにはパスワードを入力してください</h1>
+        <form id="passwordForm">
+            <input type="password" id="password" placeholder="パスワードを入力" required>
+            <button type="submit">送信</button>
+        </form>
+        <div id="message"></div>
+        <div id="daysContainer" style="display: none;">
+            <button>月曜</button>
+            <button>火曜</button>
+            <button>水曜</button>
+            <button>木曜</button>
+            <button>金曜</button>
+            <button>土曜</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
